@@ -35,7 +35,7 @@ A clean, modern calculator web app built with vanilla HTML, CSS, and JavaScript.
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/calculator.git
+git clone https://github.com/RohitGarudkar/calculator.git
 
 # Navigate to project directory
 cd calculator
@@ -151,7 +151,7 @@ Fully responsive design that works on:
 
 ## 🐛 Known Issues
 
-None currently! If you find a bug, please [open an issue](https://github.com/yourusername/calculator/issues).
+None currently! If you find a bug, please [open an issue](https://github.com/RohitGarudkar/calculator/issues).
 
 ## 🤝 Contributing
 
@@ -164,15 +164,11 @@ Contributions are welcome! Here's how you can help:
 5. Push to the branch (`git push origin feature/amazing-feature`)
 6. Open a Pull Request
 
-## 📝 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 👨‍💻 Author
 
 **Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+- GitHub: [@RohitGarudkar](https://github.com/RohitGarudkar)
+- LinkedIn: [Rohit Garudkar](https://linkedin.com/in/rohitgarudkar)
 
 ## 🙏 Acknowledgments
 
@@ -188,4 +184,5 @@ If you have any questions or need help, feel free to:
 
 ---
 
-Made with ❤️ by [Your Name]#
+Made with ❤️ by [Rohit Garudkar]#
+
