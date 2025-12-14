@@ -77,7 +77,9 @@ calculator/
 ├── README.md           # Project documentation
 └── screenshots/        # Screenshots for README
     ├── dark-theme.png
-    └── light-theme.png
+    ├── light-theme.png
+    └── mobile-view.png
+
 ```
 
 ## 🎮 How to Use
@@ -185,4 +187,5 @@ If you have any questions or need help, feel free to:
 ---
 
 Made with ❤️ by [Rohit Garudkar]#
+
 
