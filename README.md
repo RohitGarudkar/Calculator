@@ -29,6 +29,9 @@ A clean, modern calculator web app built with vanilla HTML, CSS, and JavaScript.
 ### Light Theme
 ![Light Theme](screenshots/light-theme.png)
 
+### Mobile View
+![Mobile View](screenshots/mobile_view.png)
+
 ## 🛠️ Installation & Setup
 
 ### Option 1: Clone the Repository
@@ -187,6 +190,7 @@ If you have any questions or need help, feel free to:
 ---
 
 Made with ❤️ by [Rohit Garudkar]
+
 
 
 
