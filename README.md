@@ -182,11 +182,12 @@ Contributions are welcome! Here's how you can help:
 
 If you have any questions or need help, feel free to:
 - Open an issue on GitHub
-- Contact me via email: your.email@example.com
+- Contact me via email: rohitgarudakar@gmail.com
 
 ---
 
 Made with ❤️ by [Rohit Garudkar]#
+
 
 
 
