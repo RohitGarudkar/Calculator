@@ -19,7 +19,7 @@ A clean, modern calculator web app built with vanilla HTML, CSS, and JavaScript.
 
 ## 🚀 Demo
 
-[Live Demo](https://RohitGarudkar.github.io/calculator) *(Replace with your GitHub Pages URL)*
+[Live Demo](https://RohitGarudkar.github.io/calculator) 
 
 ## 📸 Screenshots
 
@@ -187,6 +187,7 @@ If you have any questions or need help, feel free to:
 ---
 
 Made with ❤️ by [Rohit Garudkar]#
+
 
 
 
