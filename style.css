@@ -1,0 +1,321 @@
+/* reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* dark theme (default) */
+    --bg: #111827;
+    --container-bg: #1f2937;
+    --display-bg: #111827;
+    --text: #ffffff;
+    --text-secondary: #9ca3af;
+    --btn-bg: #374151;
+    --btn-hover: #4b5563;
+    --btn-operator: #2563eb;
+    --btn-operator-hover: #1d4ed8;
+    --btn-equals: #16a34a;
+    --btn-equals-hover: #15803d;
+    --btn-clear: #dc2626;
+    --btn-clear-hover: #b91c1c;
+    --history-bg: #374151;
+    --history-item: #4b5563;
+    --history-item-hover: #6b7280;
+}
+
+body.light-theme {
+    --bg: #f3f4f6;
+    --container-bg: #ffffff;
+    --display-bg: #f9fafb;
+    --text: #111827;
+    --text-secondary: #6b7280;
+    --btn-bg: #e5e7eb;
+    --btn-hover: #d1d5db;
+    --btn-operator: #3b82f6;
+    --btn-operator-hover: #2563eb;
+    --btn-equals: #22c55e;
+    --btn-equals-hover: #16a34a;
+    --btn-clear: #ef4444;
+    --btn-clear-hover: #dc2626;
+    --history-bg: #f3f4f6;
+    --history-item: #e5e7eb;
+    --history-item-hover: #d1d5db;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    transition: background 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* calculator section */
+.calc-section {
+    grid-column: 1;
+}
+
+.calculator {
+    background: var(--container-bg);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: background 0.3s ease;
+}
+
+.calc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.calc-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.theme-btn {
+    background: var(--btn-bg);
+    color: var(--text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.theme-btn:hover {
+    background: var(--btn-hover);
+    transform: scale(1.05);
+}
+
+.theme-btn:active {
+    transform: scale(0.95);
+}
+
+/* display */
+.display {
+    background: var(--display-bg);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+}
+
+.display-prev {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    min-height: 1.5rem;
+    text-align: right;
+}
+
+.display-current {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: right;
+    word-wrap: break-word;
+    margin-top: 0.5rem;
+}
+
+/* buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: var(--btn-bg);
+    color: var(--text);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.btn:hover {
+    background: var(--btn-hover);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.btn-operator {
+    background: var(--btn-operator);
+    color: white;
+}
+
+.btn-operator:hover {
+    background: var(--btn-operator-hover);
+}
+
+.btn-equals {
+    background: var(--btn-equals);
+    color: white;
+}
+
+.btn-equals:hover {
+    background: var(--btn-equals-hover);
+}
+
+.btn-clear {
+    background: var(--btn-clear);
+    color: white;
+}
+
+.btn-clear:hover {
+    background: var(--btn-clear-hover);
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+/* history section */
+.history-section {
+    grid-column: 1;
+}
+
+.history {
+    background: var(--container-bg);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: background 0.3s ease;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.history-header h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.btn-clear-history {
+    background: var(--btn-clear);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-clear-history:hover {
+    background: var(--btn-clear-hover);
+}
+
+.btn-clear-history:active {
+    transform: scale(0.95);
+}
+
+.btn-clear-history.hidden {
+    display: none;
+}
+
+.history-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.history-empty {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 3rem 1rem;
+    font-size: 0.875rem;
+}
+
+.history-item {
+    background: var(--history-item);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text);
+}
+
+.history-item:hover {
+    background: var(--history-item-hover);
+    transform: translateX(4px);
+}
+
+.history-item:active {
+    transform: scale(0.98);
+}
+
+.history-calc {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.history-result {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/* responsive design */
+@media (min-width: 768px) {
+    .container {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .calc-section {
+        grid-column: 1;
+    }
+
+    .history-section {
+        grid-column: 2;
+    }
+}
+
+/* custom scrollbar */
+.history-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.history-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+    background: var(--history-item);
+    border-radius: 4px;
+}
+
+.history-list::-webkit-scrollbar-thumb:hover {
+    background: var(--history-item-hover);
+}
